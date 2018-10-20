@@ -1,0 +1,29 @@
+{
+    "name": "ofixone/yii2-imp-file-kit",
+    "description": "Yii2 Improved File Kit",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","improved","file","upload"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Eugene Terentev",
+            "email": "eugene@terentev.net"
+        },
+        {
+            "name": "Vladimir Galtsev",
+            "email": "ofixmail@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "trntv/yii2-file-kit": "@stable",
+        "npm-asset/cropperjs": "^1.4",
+        "npm-asset/jquery-cropper": "^1.0",
+        "yiisoft/yii2-imagine": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ofixone\\filekit\\": "src"
+        }
+    }
+}
