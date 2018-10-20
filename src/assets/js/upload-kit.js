@@ -289,7 +289,7 @@
                 }
                 var item = $('<li>', {"class": "upload-kit-item done ",
                     "style": options.alt && options.title ?
-                        'margin-bottom: 10rem !important' : !options.alt || !options.title ?
+                        'margin-bottom: 10rem !important' : options.alt || options.title ?
                         'margin-bottom: 5rem !important' : ''
                     })
                     .append($('<input/>', {"name": name + '[' + options.pathAttributeName + ']', "value": file[options.pathAttribute], "type":"hidden"}))
