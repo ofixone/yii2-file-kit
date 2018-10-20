@@ -161,6 +161,9 @@
 .text-options {
   margin: 1rem 0 !important;;
 }
+.upload-kit-item.image {
+  background: #d9e7ef;
+}
 .upload-kit-item.not-image {
   height: 150px !important;
   background-size: 45%;
