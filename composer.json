@@ -16,7 +16,7 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "ofixone/yii2-imp-content": "0.1.0",
+        "ofixone/yii2-imp-content": "^0.1",
         "trntv/yii2-file-kit": "@stable",
         "npm-asset/cropperjs": "^1.4",
         "npm-asset/jquery-cropper": "^1.0",
