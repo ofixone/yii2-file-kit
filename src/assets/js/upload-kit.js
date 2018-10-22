@@ -8,11 +8,11 @@
  */
 (function( $ ) {
     jQuery.fn.yiiUploadKit = function(options) {
-
         var $input = this;
         var $container = $input.parent('div');
         var $files = $('<ul>', {"class":"files"}).insertBefore($input);
         var $emptyInput = $container.find('.empty-value');
+        options.name = $emptyInput.attr('name');
 
         (function cropper() {
             var chars = {};
