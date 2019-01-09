@@ -15,6 +15,7 @@ class UploadBehavior extends \trntv\filekit\behaviors\UploadBehavior
 {
     public $altAttribute;
     public $titleAttribute;
+	public $searchRoute = 'admin';
 
     /**
      * @return array
@@ -65,7 +66,7 @@ class UploadBehavior extends \trntv\filekit\behaviors\UploadBehavior
             ActiveRecord::EVENT_AFTER_DELETE => 'afterDelete',
         ];
 
-        if(strrpos(\Yii::$app->controller->route, 'admin') !== false) {
+        if(strrpos(\Yii::$app->controller->route, $this->searchRoute) !== false) {
             $multipleEvents[ActiveRecord::EVENT_AFTER_FIND] = 'afterFindMultiple';
             $singleEvents[ActiveRecord::EVENT_AFTER_FIND] = 'afterFindSingle';
         }
